@@ -1,0 +1,44 @@
+# Web scraping
+scrapy==2.11.*
+playwright==1.44.*
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# NLP / NER
+spacy==3.7.*
+transformers>=4.40
+langdetect>=1.0.9
+
+# Embedding / Vector DB (Google Gemini - FREE)
+google-generativeai>=0.8.0
+qdrant-client>=1.9,<1.10
+
+# Feature store
+redis>=5.0
+pandas>=2.0
+pyarrow>=15.0
+
+# ML
+xgboost>=2.0,<2.1
+lightgbm>=4.0
+scikit-learn>=1.4
+shap>=0.45,<0.46
+numpy>=1.26
+
+# Market data
+yfinance>=0.2.40
+
+# API / Dashboard
+fastapi>=0.111
+uvicorn[standard]>=0.30
+streamlit>=1.35
+pydantic>=2.7
+pydantic-settings>=2.2
+
+# Scheduling / Alerts
+apscheduler>=3.10,<3.11
+python-telegram-bot>=21.0
+
+# Utilities
+python-dotenv>=1.0
+PyYAML>=6.0

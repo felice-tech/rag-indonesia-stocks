@@ -1,0 +1,52 @@
+# News source registry.
+# credibility_score (0.0-1.0) is used both as a retrieval weight in the RAG
+# layer and as a feature input downstream.
+sources:
+  - id: reuters
+    name: Reuters
+    type: wire
+    language: en
+    credibility_score: 0.95
+    notes: Prioritas utama macro global
+
+  - id: bloomberg
+    name: Bloomberg
+    type: wire
+    language: en
+    credibility_score: 0.93
+    notes: Fokus market & commodities
+
+  - id: cnbc_indonesia
+    name: CNBC Indonesia
+    type: portal
+    language: id
+    credibility_score: 0.80
+    notes: Lokal, cepat
+
+  - id: kontan
+    name: Kontan
+    type: portal
+    language: id
+    credibility_score: 0.82
+    notes: Fokus pasar modal IDX
+
+  - id: bisnis
+    name: Bisnis.com
+    type: portal
+    language: id
+    credibility_score: 0.78
+    notes: Good for earnings news
+
+  - id: twitter_verified
+    name: Twitter/X (verified)
+    type: social
+    language: id/en
+    credibility_score: 0.55
+    notes: Hanya akun verified analyst
+
+  - id: telegram_channel
+    name: Telegram channel
+    type: social
+    language: id
+    credibility_score: 0.50
+    notes: Whitelist channel saja
